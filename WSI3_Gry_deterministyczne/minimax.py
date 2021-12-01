@@ -1,5 +1,4 @@
 import numpy
-
 import isolation_game as ig
 from copy import deepcopy
 import random
@@ -125,7 +124,6 @@ def statistics(times):
         returns.append(play_mm_v_r())
     stats = numpy.unique(returns, return_counts=True)
     return stats
-
 
 
 # play_mm_v_mm()

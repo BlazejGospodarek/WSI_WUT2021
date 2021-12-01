@@ -1,8 +1,3 @@
-import random
-import numpy
-from numpy import unique
-
-
 class Isolation:
     def __init__(self, size, player_1_pos, player_2_pos):
         self._size = size
@@ -109,29 +104,3 @@ class Isolation:
         self._board_with_players = move_board
         self.change_move()
         return
-
-#
-# def play():
-#     game = Isolation(5, (1, 1), (1, 2))
-#     while True:
-#         print(game)
-#         if len(game.get_moves()) == 0:
-#             lost = game.get_current_player()
-#             print(f"Player {lost} lost")
-#             return lost
-#         moves_possible = game.get_moves()
-#         random_move = random.choice(moves_possible)
-#         game.move(random_move)
-#         game.change_move()
-#
-#
-# def get_stats(games):
-#     wins = []
-#     for i in range(games):
-#         winner = play()
-#         wins.append(winner)
-#     return wins
-#
-#
-# lsita = numpy.unique(get_stats(100), return_counts=True)
-# print(lsita)
